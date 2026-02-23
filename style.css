@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url('https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    margin: 0;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('./assets/leaves.jpg');
+    background-size: cover;
+    width: 40%;
+    align-items: center;
+    height: 100vh;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    gap: 10px;
+    margin-top: 160px;
+}
+
+.logo img {
+    width: 20%;
+}
+
+.logo h1 {
+    font-family: 'Norse-Bold', sans-serif;
+    color: white;
+    font-size: 60px;
+}
+
+.left-section h6 {
+    color: white;
+    a {
+        color: white;
+    }
+    font-family: sans-serif;
+    font-size: 10px;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 140px;
+    background-color: whitesmoke;
+    h2 {
+        font-family: sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    h3 {
+        font-family: sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    fieldset {
+        padding: 10px 80px 10px 20px;
+        border: none;
+    }
+    .main-form {
+        background-color: white;
+        box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        fieldset {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            padding-left: 0;
+            div {
+                display: flex;
+                flex-direction: column;
+                label {
+                    font-size: 10px;
+                    text-transform: uppercase;
+                }
+                input {
+                    height: 30px;
+                    border: solid 1px #E5E7EB;
+                    border-radius: 5px;
+                    padding-left: 10px;
+                }
+                input:invalid {
+                    border-color: red;
+                }
+                input:focus {
+                    border-color: blue;
+                    box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+                    outline: none;
+                }
+            }
+        }
+    }
+    button {
+        background-color: #596D48;
+        color: white;
+        padding: 10px 30px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        margin: 10px 0;
+    }
+
+    a {
+        color: #596D48;
+        font-weight: 600;
+    }
+}
